@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     public int sidewaysForce = 500;
     public bool movement = true;
+    public NewGameManager gameManager;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -34,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (rb.position.y < -1f)
         {
-            FindFirstObjectByType<GameManager>().EndGame();
+            gameManager.EndGame();
         }
     }
 
@@ -45,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
             movement = false;
             //Destroy(GameObject.FindWithTag("Obstacle"));
 
-            FindFirstObjectByType<GameManager>().EndGame();
+            gameManager.EndGame();
         }
     }
 }
