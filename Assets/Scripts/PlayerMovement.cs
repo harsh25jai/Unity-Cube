@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     public int sidewaysForce = 500;
     public bool movement = true;
-    public NewGameManager gameManager;
+    public GameManager gameManager;
 
     // Update is called once per frame
     void FixedUpdate()

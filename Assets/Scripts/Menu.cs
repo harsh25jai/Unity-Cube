@@ -33,8 +33,6 @@ public class Menu : MonoBehaviour
 
         if (highscoreText != null)
             highscoreText.gameObject.SetActive(!firstRun);
-
-
     }
 
 }

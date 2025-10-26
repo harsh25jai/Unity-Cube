@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NewGameManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     bool isGameFinished = false;
     float restartDelay = 2f;
